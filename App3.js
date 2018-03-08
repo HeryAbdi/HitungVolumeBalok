@@ -8,8 +8,9 @@ import {
 } from 'react-native';
 
 export default class HitungKelilingTrapesium extends Component {
-  constructor(props){
-  super(props) this.State ={
+  constructor(props) {
+  super(props);
+  this.State = {
       sisisatu: 0,
       sisidua: 0,
       sisitiga: 0,
@@ -20,45 +21,50 @@ export default class HitungKelilingTrapesium extends Component {
 
   render() {
     return (
-      <View style = {{flex : 1, backgroundColor:'#CDDC39'}}>
+      <View style={{ flex: 1, backgroundColor: '#CDDC39' }}>
 
-        <View style= {{backgroundColor:'#607D8B'}}>
-           <Text style = {{padding: 10, fontSize: 20, color: 'white', textAlign:'center'}} >
+        <View style={{ backgroundColor: '#607D8B' }}>
+           <Text style={{ padding: 10, fontSize: 20, color: 'white', textAlign: 'center' }} >
             Menghitung Keliling Trapesium
           </Text>
          </View>
 
-        <View style={{margin:20,padding: 10, backgroundColor:'#FFF3E0'}}>
-            <TextInput style = {{height: 50}}
+        <View style={{ margin: 20, padding: 10, backgroundColor: '#FFF3E0' }}>
+            <TextInput
+              style={{ height: 50 }}
               placeholder="Masukkan Sisi Pertama"
-              onChangeText={(sisisatu)=>this.setState({sisisatu})}
-              keyboardType = 'numeric'
+              onChangeText={(sisisatu) => this.setState({ sisisatu })}
+              keyboardType='numeric'
             />
-            <TextInput style = {{height: 50}}
+            <TextInput
+              style={{ height: 50 }}
               placeholder="Masukkan  Sisi Kedua"
-              onChangeText={(sisidua)=>this.setState({sisidua})}
-              keyboardType = 'numeric'
+              onChangeText={(sisidua) => this.setState({ sisidua })}
+              keyboardType='numeric'
             />
-            <TextInput style = {{height: 50}}
+            <TextInput
+              style={{ height: 50 }}
               placeholder="Masukkan  Sisi Ketiga"
-              onChangeText={(sisitiga)=>this.setState({sisitiga})}
-              keyboardType = 'numeric'
+              onChangeText={(sisitiga) => this.setState({ sisitiga })}
+              keyboardType='numeric'
             />
-            <TextInput style = {{height: 50}}
+            <TextInput
+              style={{ height: 50 }}
               placeholder="Masukkan  Sisi Keempat"
-              onChangeText={(sisiempat)=>this.setState({sisiempat})}
-              keyboardType = 'numeric'
+              onChangeText={(sisiempat) => this.setState({ sisiempat })}
+              keyboardType='numeric'
             />
 
 
             <Button
-              onPress={()=>this.setState({
-                keliling: (parseInt(this.state.sisisatu)+parseInt(this.state.sisidua)+parseInt(this.state.sisitiga)+parseInt(this.state.sisiempat))
-              })}
+              onPress={() => this.setState({
+              keliling: (parseInt(this.state.sisisatu) + parseInt (this.state.sisidua) + parseInt(this.state.sisitiga)+parseInt(this.state.sisiempat)
+            )}
               title="Hitung"
               color="#212121"
               accessibilityLabel="Klik untuk menghitung"
             />
+
        </View>
 
         <View style={{margin:20, backgroundColor:'#333333'}}>
