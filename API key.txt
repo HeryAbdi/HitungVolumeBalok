@@ -1,0 +1,5 @@
+API Key :
+cdd6ee69ad6f2b1d1ea90e092fdc3306
+
+Link Web:
+http://api.openweathermap.org/data/2.5/weather?q=Singaraja&appid=cdd6ee69ad6f2b1d1ea90e092fdc3306
